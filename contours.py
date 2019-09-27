@@ -19,6 +19,9 @@ if PY3:
 import numpy as np
 import cv2 as cv
 
+
+#created new shape
+
 def make_image():
     img = np.zeros((500, 500), np.uint8)
     black, grey, white = 0, 150, 255
@@ -44,6 +47,8 @@ def make_image():
 
 
     return img
+
+#Fixed the contouring function by ammending edge values and fixing level structure
 
 def main():
     img = make_image()
